@@ -13,8 +13,10 @@ int string_printer(const char *format, va_list args)
 
 {
 
+int counter;
 int i = 0;
 int string_size = 0;
+
 
 int (*Format_specifier)(format, args, &i) = Percent_handler;
 
