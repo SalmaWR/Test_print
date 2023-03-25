@@ -26,7 +26,9 @@ int (*Format_specifier)(const char *format,va_list args, &i) = Percent_handler;
 		{
 		i++;
 		counter = (Format_specifier)(format,args, &i);
-		 
+		
+		size += counter;
+		return (size);
 		}
 		
 		else
