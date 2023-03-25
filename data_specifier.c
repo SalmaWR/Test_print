@@ -12,12 +12,12 @@
 int string_printer(const char *format, va_list args)
 
 {
-
+int counter;
 int i = 0;
 int string_size = 0;
 
 
-int (*Format_specifier)(format, args, &i) = Percent_handler;
+int (*Format_specifier)(const char *format,va_list args, &i) = Percent_handler;
 
 	for (i =0; format[i] !=  0; i++)
 	{
@@ -25,7 +25,7 @@ int (*Format_specifier)(format, args, &i) = Percent_handler;
 		
 		{
 		i++;
-		
+		counter = (Format_specifier)(format,args, &i);
 		 
 		}
 		
@@ -54,6 +54,8 @@ int (*Format_specifier)(format, args, &i) = Percent_handler;
 
 int Percent_handler(const char *format, va_list args, int i)
 {
+
+
 
 }
 
