@@ -47,8 +47,6 @@ Compile the .c files in _printf using
 
 ## Authors
 
-## Authors
-
 - Muhammad Baheudden - [@baheuddeen](https://github.com/baheuddeen)
 - Salma Wagdy - [@SalmaWR](https://github.com/SalmaWR)
 
