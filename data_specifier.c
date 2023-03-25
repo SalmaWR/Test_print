@@ -25,8 +25,11 @@ int (*Format_specifier)(const char *format,va_list args, &i) = Percent_handler;
 		
 		{
 		i++;
-		counter = (Format_specifier)(format,args, &i);
+		counter = (Format_specifier)(format, args, &i);
 		
+			if (counter < 0)
+			return (-1);			
+
 		size += counter;
 		return (size);
 		}
@@ -54,11 +57,11 @@ int (*Format_specifier)(const char *format,va_list args, &i) = Percent_handler;
 * Return: Size of the numbers of elements printed
 */
 
-int Percent_handler(const char *format, va_list args, int i)
+int Percent_handler(const char *format, va_list args, int *i)
 {
 
+/* */
 
 
 }
-
 
