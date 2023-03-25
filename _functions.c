@@ -1,19 +1,19 @@
-#include"header.h"
+#include "header.h"
 
 /**
-* print_string - Print string
-* @list: list.
-*
-* Return: String length.
-**/
+ * print_string - Print string
+ * @list: list.
+ *
+ * Return: String length.
+ **/
 
 int print_string(va_list args)
 {
 
-char *str = va_arg(args, char*);
-int size = _strlen(str);
+    char *str = va_arg(args, char *);
+    int size = _strlen(str);
 
-return (write(STDOUT_FILENO, str, size));
+    return (write(1, str, size));
 }
 
 /**
@@ -25,7 +25,6 @@ return (write(STDOUT_FILENO, str, size));
 
 int print_char(va_list args)
 {
-char c =  va_arg(args, int);
-return (write(STDOUT_FILENO, &c, 1));
+    char c = va_arg(args, int);
+    return (write(STDOUT_FILENO, &c, 1));
 }
-
