@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 /**
  * _printf - Produces output according to a format
  * @format: Is a character string. The format string
@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 {
 
     va_list args;
-    int string_size = _strlen(format); //13
+    int string_size = _strlen(format); 
 
     if (!format)
     {

@@ -1,5 +1,6 @@
-#include "header.h"
-#include "stdio.h"
+#include"main.h"
+#include <stdio.h>
+#include<stddef.h>
 /**
  * _printer - Format cotroller
  * @format: String format

@@ -20,7 +20,7 @@ Once cloned over, the repository will contain the following files:
 
 | File             | Description                                   |
 | ---------------  | ---------------                               |
-| header.h         | header file with prototypes                   |
+| main.h         | header file with prototypes                   |
 | _printf.c        | the implemention of re-created printf function|
 
 ## Format tags

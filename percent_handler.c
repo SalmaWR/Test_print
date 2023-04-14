@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 
 /**
  * percent_handler - Controller for percent format
@@ -27,11 +27,9 @@ int _percent_handler(const char *format, va_list args, int i)
 		counter = print_char(args);
 		break;
 	case 'd':
-	case 'i':
-		// counter = print_integer(args);
+		counter = print_integer(args);
 		break;
 	default:
-		// handle unvalid bateee5
 		break;
 	}
 	return (counter);
